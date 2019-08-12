@@ -1,13 +1,9 @@
-# View more python learning tutorial on my Youtube and Youku channel!!!
 
-# Youtube video tutorial: https://www.youtube.com/channel/UCdyjiB5H8Pu7aDTNVXTTpcg
-# Youku video tutorial: http://i.youku.com/pythontutorial
-
-import time
-print(time.localtime())
+import time #导入time模块
+print(time.localtime()) #本地时间
 
 import time as t
-print(t.localtime())
+print(t.localtime())  #为模块起别名
 
 from time import localtime, time
 print(localtime())
