@@ -1,17 +1,12 @@
-# View more python learning tutorial on my Youtube and Youku channel!!!
-
-# Youtube video tutorial: https://www.youtube.com/channel/UCdyjiB5H8Pu7aDTNVXTTpcg
-# Youku video tutorial: http://i.youku.com/pythontutorial
-
 try:
-    file = open('eeee', 'r+')
+    file = open('eeee', 'r+')   #r+：以可读可写的方式打开文件，若文件不存在则报错
 except Exception as e:
     print('there is no file named as eeeee')
-    response = input('do you want to create a new file')
+    response = input('do you want to create a new file')    #用户输入
     if response =='y':
-        file = open('eeee','w')
+        file = open('eeee','w') #以不可读的方式打开文件，若文件不存在则创建一个
     else:
-        pass
+        pass    #占位语句
 else:
     file.write('ssss')
 file.close()
